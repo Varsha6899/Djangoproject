@@ -3,8 +3,8 @@
 ## Steps for creating django rest API
 
 ##Install DJango RestFramework / prerequisites
-             #pip install django
-             #pip install djangorestframework
+#pip install django
+#pip install djangorestframework
 
 ##Create django app
 django-admin startapp my_app
@@ -39,13 +39,13 @@ class my_app(models.Model):
     def __str__(self):
         return self.id
         
- ##Add your model into admin console
+ #Add your model into admin console
  from django.contrib import admin
+ 
 # Register your models here.
 from .models import my_app
 admin.site.register(my_app)
 
-##image
 
 
 
@@ -53,7 +53,7 @@ admin.site.register(my_app)
 
 
 
-##Create Serializers on my_app/serializers.py
+#Create Serializers on my_app/serializers.py
 from rest_framework import serializers
 from .models import my_app
 
@@ -62,7 +62,8 @@ class Serializer(serializers.HyperlinkedModelSerializer):
        model = my_app
        fields = ('id', 'real_name', 'tz', 'activity_periods')
        
-##Update views as per the serializers on departments/views.py
+       
+#Update views as per the serializers on departments/views.py
 from django.shortcuts import render
 # Create your views here.
 from rest_framework import viewsets
