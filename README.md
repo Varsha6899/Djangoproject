@@ -46,14 +46,7 @@ class my_app(models.Model):
 from .models import my_app
 admin.site.register(my_app)
 
-
-
-
-
-
-
-
-#Create Serializers on my_app/serializers.py
+## Create Serializers on my_app/serializers.py
 from rest_framework import serializers
 from .models import my_app
 
@@ -63,8 +56,9 @@ class Serializer(serializers.HyperlinkedModelSerializer):
        fields = ('id', 'real_name', 'tz', 'activity_periods')
        
        
-#Update views as per the serializers on departments/views.py
+## Update views as per the serializers on departments/views.py
 from django.shortcuts import render
+
 # Create your views here.
 from rest_framework import viewsets
 from .models import my_app
