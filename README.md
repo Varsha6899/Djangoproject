@@ -3,8 +3,8 @@
 ## Steps for creating django rest API
 
 ##Install DJango RestFramework / prerequisites
-#pip install django
-#pip install djangorestframework
+             #pip install django
+             #pip install djangorestframework
 
 ##Create django app
 django-admin startapp my_app
@@ -25,7 +25,7 @@ urlpatterns = [
     path('', include('my_app.urls')),
 ]
 
-##Create a model for employee_api on my_app/models.py
+##Create a model for employee_api on my_app/models.py  
 from django.db import models
 
 # Create your models here.
