@@ -39,6 +39,13 @@ class my_app(models.Model):
     def __str__(self):
         return self.id
         
+        
+        
+       
+        
+        
+        
+        
  #Add your model into admin console
  from django.contrib import admin
  
