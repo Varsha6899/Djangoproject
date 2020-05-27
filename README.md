@@ -3,8 +3,8 @@
 ## Steps for creating django rest API
 
 ##Install DJango RestFramework / prerequisites
-pip install django
-pip install djangorestframework
+#pip install django
+#pip install djangorestframework
 
 ##Create django app
 django-admin startapp my_app
