@@ -40,7 +40,7 @@ class my_app(models.Model):
         return self.id
         
         
-        
+ ![WhatsApp Image 2020-05-27 at 8 03 23 PM](https://user-images.githubusercontent.com/65886536/83037917-f9b2ce80-a059-11ea-91d5-551849342782.jpeg)  
        
         
         
@@ -63,7 +63,7 @@ class Serializer(serializers.HyperlinkedModelSerializer):
        fields = ('id', 'real_name', 'tz', 'activity_periods')
        
        
-## Update views as per the serializers on departments/views.py
+## Update views as per the serializers on my_app/views.py
 from django.shortcuts import render
 
 # Create your views here.
@@ -86,6 +86,14 @@ router.register('my_app', views.my_appView)
 urlpatterns = [
   path('', include(router.urls))
 ]
+
+
+
+
+
+
+
+
 
 
 
